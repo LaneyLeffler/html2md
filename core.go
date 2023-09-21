@@ -31,3 +31,4 @@ func AddRule(name string, rule *Rule) {
 func AddConvert(f func(string) string) {
 	converts = append(converts, f)
 }
+ 
