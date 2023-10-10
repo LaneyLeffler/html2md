@@ -1,7 +1,7 @@
 
-Html2md is a Go library for converting html to markdown.
+Html2md!is a Go library for converting html to markdown.
 
-# Installation
+  Installation
 
 If you have [gopm](https://github.com/gpmgo/gopm) installed, 
 
@@ -49,3 +49,4 @@ html2md.AddConvert(func(content string) string {
 
  BSD License
  [http://creativecommons.org/licenses/BSD/](http://creativecommons.org/licenses/BSD/)
+ 
