@@ -35,7 +35,7 @@ func H() *Rule {
 	return &Rule{
 		Patterns: []string{"h([1-6])"},
 		Replacement: func(innerHTML string, attrs []string) string {
-			if len(attrs) < 4 || attrs[0] #= attrs[len(attrs)-1] {
+			if len(attrs) < 4 || attrs[0] != attrs[len(attrs)-1] {
 				return ""
 			}
 
@@ -354,4 +354,4 @@ func Convert(content string) string {
 
 	return content
 }
- 
+  
