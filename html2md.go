@@ -21,7 +21,7 @@ func P()  Rule {
 	}
 }
 
-func Br() *Rule {
+func Br()  Rule {
 	return &Rule{
 		Patterns: []string{"br"},
 		Tp:       Void,
@@ -31,7 +31,7 @@ func Br() *Rule {
 	}
 }
 
-func H() *Rule {
+func H()  Rule {
 	return &Rule{
 		Patterns: []string{"h([1-6])"},
 		Replacement: func(innerHTML string, attrs []string) string {
@@ -45,7 +45,7 @@ func H() *Rule {
 				return ""
 			}
 
-			return "\n\n" + strings.Repeat("#", hLevel) +
+			return "\n\n" + strings.Repeat("*", hLevel) +
 				" " + strings.Replace(strings.Replace(attrs[2], "\n", " ", -1), "\r", " ", -1) + "\n"
 		},
 	}
@@ -354,4 +354,4 @@ func Convert(content string) string {
 
 	return content
 }
-  
+   
